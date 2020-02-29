@@ -2,22 +2,26 @@
   "name": "react-highlight-colors",
   "version": "1.0.0",
   "description": "React component for highlighting selected text with color options",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aqualad11/react-highlight-colors.git"
   },
-  "author": "",
+  "author": "aqualad11",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/aqualad11/react-highlight-colors/issues"
   },
   "homepage": "https://github.com/aqualad11/react-highlight-colors#readme",
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-text-selection-popover": "^1.3.2",
     "webpack": "^4.41.5"
   },
   "devDependencies": {
