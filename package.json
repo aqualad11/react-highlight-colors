@@ -1,6 +1,6 @@
 {
   "name": "react-highlight-colors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component that allows users to select text and highlight it in whichever color they choose.",
   "author": "aqualad11",
   "license": "MIT",
