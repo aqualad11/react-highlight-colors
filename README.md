@@ -99,4 +99,4 @@ Result:
 | `cols` | `PropTypes.number` | optional | `8` | Number of columns of colors per row in color popover. |
 
 # License
-MIT © [aqualad11](https://github.com/aqualad11)
+MIT © [Jonathan](https://github.com/aqualad11)

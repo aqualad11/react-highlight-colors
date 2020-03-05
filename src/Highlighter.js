@@ -25,6 +25,10 @@ class Highlighter extends React.Component {
       ),
       isOpen: false
     };
+
+    require('react-dom');
+	window.React2 = require('react');
+	console.log(window.React1 === window.React2);
   }
 
   // import existing highlighted text that has been exported
@@ -233,11 +237,11 @@ class Highlighter extends React.Component {
             );
           })}
         </span>
-        <Popover
-          selectionRef={selectableRef}
-          isOpen={this.state.isOpen}
-          onTextSelect={() => this.setState({ isOpen: true })}
-          onTextUnselect={() => this.setState({ isOpen: false })}
+		    <Popover
+        selectionRef={selectableRef}
+        isOpen={this.state.isOpen}
+        onTextSelect={() => this.setState({ isOpen: true })}
+        onTextUnselect={() => this.setState({ isOpen: false })}
         >
           <Grid container alignContent="space-around" direction="column">
             {this.state.colorOptions.map(colorRow => (
@@ -263,11 +267,23 @@ class Highlighter extends React.Component {
               </Grid>
             ))}
           </Grid>
-        </Popover>
+	      </Popover>
       </div>
     );
   }
 }
+
+/*
+
+        <Popover
+          selectionRef={selectableRef}
+          isOpen={this.state.isOpen}
+          onTextSelect={() => this.setState({ isOpen: true })}
+          onTextUnselect={() => this.setState({ isOpen: false })}
+        >
+        </Popover>
+
+*/
 
 Highlighter.propTypes = {
   text: PropTypes.string.isRequired,
